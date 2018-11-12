@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>User Name: {{data.login}}</h1>
+<div mat-dialog-content>
+  <img src="{{searchDetails.avatar_url}}"/>
+  <p>Name: {{searchDetails.name}}</p>
+  <p>Bio: {{searchDetails.bio}}</p>
+  <p>Blog: <a href="{{searchDetails.blog}}">{{searchDetails.blog}}</a></p>
+  <p>Followers: {{searchDetails.followers}}</p>
+  <p>Following: {{searchDetails.following}}</p>
+  <p>URL: <a href="{{searchDetails.html_url}}">{{searchDetails.html_url}}</a></p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="close()">Close</button>
+</div>
